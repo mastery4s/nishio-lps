@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Forklift Rental Malaysia | NISHIO Rent All</title>
+<style>
+  :root {
+    --primary: #00AEEF;
+    --primary-dark: #0090CC;
+    --dark: #1a1a2e;
+    --gray: #f5f7fa;
+    --text: #333;
+    --text-light: #666;
+    --white: #fff;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --radius: 12px;
+    --red: #e53935;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(rgba(26,26,46,0.45), rgba(22,33,62,0.55)),
+                url('https://static.wixstatic.com/media/a0cfef_896d9d1956764ac79703f8eb283a7e16~mv2.jpg/v1/fill/w_1920,h_800,al_c,q_85,enc_avif,quality_auto/a0cfef_896d9d1956764ac79703f8eb283a7e16~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 40px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--white);
+    clip-path: ellipse(55% 100% at 50% 100%);
+  }
+  .hero-logo {
+    width: 200px;
+    margin-bottom: 24px;
+    filter: brightness(10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .hero h1 span { color: var(--primary); }
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 28px;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,174,239,0.4);
+    position: relative;
+    z-index: 2;
+  }
+  .hero-cta:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,174,239,0.5);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(0,174,239,0.15);
+    border: 1px solid rgba(0,174,239,0.3);
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===== TRUST BAR ===== */
+  .trust-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 20px;
+    background: var(--white);
+    position: relative;
+    z-index: 2;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .trust-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  /* ===== SECTION ===== */
+  .section { padding: 60px 20px; }
+  .section-gray { background: var(--gray); }
+  .section-dark { background: var(--dark); color: var(--white); }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--dark);
+  }
+  .section-dark .section-title { color: var(--white); }
+  .section-sub {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  .section-dark .section-sub { color: rgba(255,255,255,0.7); }
+
+  /* ===== WHY RENT ===== */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .benefit-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary);
+    transition: transform 0.3s;
+  }
+  .benefit-card:hover { transform: translateY(-4px); }
+  .benefit-icon { font-size: 2rem; margin-bottom: 12px; }
+  .benefit-card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--dark); }
+  .benefit-card p { color: var(--text-light); font-size: 0.95rem; }
+
+  /* ===== HIDDEN COSTS (NEW) ===== */
+  .costs-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: var(--white);
+    padding: 60px 20px;
+  }
+  .costs-section .section-title { color: var(--primary); }
+  .costs-section .accent { color: var(--primary); font-weight: 700; }
+  .costs-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .costs-content p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  .cost-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 30px 0;
+  }
+  .cost-item {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+  }
+  .cost-item .cost-icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .cost-item h4 { font-size: 0.95rem; color: var(--primary); margin-bottom: 4px; }
+  .cost-item p { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin: 0; }
+  .costs-cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .costs-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .costs-cta a:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+  /* ===== EQUIPMENT ===== */
+  .equip-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .equip-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+  .equip-card:hover { transform: translateY(-3px); }
+  .equip-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    background: #fafafa;
+    border-radius: 8px;
+  }
+  .equip-card h4 { font-size: 0.9rem; color: var(--dark); }
+  .equip-card.featured {
+    border: 2px solid var(--primary);
+    position: relative;
+  }
+  .equip-card.featured::before {
+    content: 'Popular';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+  .equip-card .equip-desc {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+  .equip-card .equip-cta {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .equip-card .equip-cta:hover { background: var(--primary-dark); }
+  .fuel-compare-link {
+    text-align: center;
+    margin-top: 28px;
+  }
+  .fuel-compare-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  .fuel-compare-link a:hover { background: var(--primary); color: var(--white); }
+
+  /* ===== TEAM SECTION ===== */
+  .team-banner { position: relative; overflow: hidden; }
+  .team-banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+  .team-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(26,26,46,0.85));
+    padding: 40px 20px 24px;
+    color: var(--white);
+    text-align: center;
+  }
+  .team-overlay h3 { font-size: 1.4rem; font-weight: 700; }
+  .team-overlay p { opacity: 0.9; font-size: 0.95rem; margin-top: 4px; }
+
+  /* ===== HOW IT WORKS ===== */
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    padding: 24px 16px;
+  }
+  .step-num {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0 auto 16px;
+  }
+  .step h4 { font-size: 1.05rem; margin-bottom: 8px; color: var(--dark); }
+  .step p { font-size: 0.9rem; color: var(--text-light); }
+
+  /* ===== COVERAGE ===== */
+  .coverage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .coverage-tag {
+    background: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+  }
+
+  /* ===== FAQ (NEW) ===== */
+  .faq-section { padding: 60px 20px; background: var(--white); }
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border: 2px solid #e8edf2;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  .faq-item.active { border-color: var(--primary); }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dark);
+    background: var(--white);
+    transition: background 0.3s;
+  }
+  .faq-q:hover { background: var(--gray); }
+  .faq-q .faq-toggle {
+    font-size: 1.3rem;
+    color: var(--primary);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+  .faq-item.active .faq-toggle { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 24px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    background: var(--gray);
+  }
+  .faq-item.active .faq-a {
+    max-height: 300px;
+    padding: 16px 24px;
+  }
+
+  /* ===== CTA SECTION ===== */
+  .cta-section {
+    background: linear-gradient(rgba(26,26,46,0.85), rgba(22,33,62,0.9)),
+                url('https://static.wixstatic.com/media/a0cfef_896d9d1956764ac79703f8eb283a7e16~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/a0cfef_896d9d1956764ac79703f8eb283a7e16~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .cta-section h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 12px; }
+  .cta-section p {
+    opacity: 0.9;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-primary:hover { background: #20bd5a; transform: translateY(-2px); }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .btn-secondary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+  /* ===== FORM ===== */
+  .form-section {
+    background: var(--gray);
+    padding: 60px 20px;
+  }
+  .form-card {
+    max-width: 560px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: var(--shadow);
+  }
+  .form-card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--dark);
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    font-family: inherit;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .form-submit {
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 8px;
+  }
+  .form-submit:hover { background: var(--primary-dark); }
+  .form-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 12px;
+  }
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .form-success h3 {
+    color: #25D366;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  .form-success p {
+    color: var(--text-light);
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+  }
+  .footer a { color: var(--primary); text-decoration: none; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .hero { padding: 30px 16px 50px; }
+    .section { padding: 40px 16px; }
+    .form-card { padding: 24px 20px; }
+    .equip-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .equip-card img { height: 100px; }
+    .equip-card h4 { font-size: 0.8rem; }
+    .team-banner img { height: 250px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .cost-items { grid-template-columns: 1fr 1fr; }
+    .faq-q { font-size: 0.9rem; padding: 14px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Trusted by Over 200 Companies in Malaysia</div>
+  <img src="https://static.wixstatic.com/media/a0cfef_ac37fab4adaf48d78e7044b5ae093137~mv2.gif" alt="NISHIO Rent All" class="hero-logo">
+  <h1>Long-Term <span>Forklift Rental</span><br>With Zero Hassle</h1>
+  <p>Full maintenance included. No capital investment. Flexible terms from 3 months. Focus on your business — we handle the rest.</p>
+  <a class="hero-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Get a Free Quote &#8594;</a>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <div class="trust-icon">&#127471;&#127477;</div>
+    Japanese Quality
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">&#128736;</div>
+    Maintenance Included
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">&#128197;</div>
+    3-Month Minimum
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">&#9989;</div>
+    Standby Replacement
+  </div>
+</div>
+
+<!-- THE HIDDEN COSTS OF BUYING (NEW) -->
+<section class="costs-section">
+  <div class="costs-content">
+    <h2 class="section-title" style="color: var(--primary); margin-bottom: 30px;">The Hidden Costs of Buying<br><span style="font-size:0.7em; color: rgba(255,255,255,0.7);">& Why Rental Could Be the Smarter Move</span></h2>
+
+    <p>You need extra lifting capacity — but is buying a forklift the smartest move? For many businesses, ownership quickly becomes a <span class="accent">hidden liability</span>.</p>
+
+    <div class="cost-items">
+      <div class="cost-item">
+        <div class="cost-icon">&#128184;</div>
+        <h4>Upfront Capital</h4>
+        <p>RM80K–RM250K+ locked up in a depreciating asset</p>
+      </div>
+      <div class="cost-item">
+        <div class="cost-icon">&#128295;</div>
+        <h4>Ongoing Maintenance</h4>
+        <p>Parts, labour & unexpected breakdown costs add up fast</p>
+      </div>
+      <div class="cost-item">
+        <div class="cost-icon">&#128200;</div>
+        <h4>Depreciation</h4>
+        <p>Value drops 15–20% per year — money you'll never recover</p>
+      </div>
+      <div class="cost-item">
+        <div class="cost-icon">&#128683;</div>
+        <h4>Downtime Risk</h4>
+        <p>No backup when your unit breaks down — operations stop</p>
+      </div>
+    </div>
+
+    <p>Workloads change, projects come and go, and customer demands shift. A forklift that suits you today might be the wrong size, type, or capacity next year. Without flexibility, you're paying for equipment you don't always need.</p>
+
+    <p style="text-align:center; font-weight:700; color:var(--primary); font-size:1.1rem;">With NISHIO rental, you get the equipment you need — with zero hidden costs.</p>
+
+    <div class="costs-cta">
+      <a onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">See How Much You Can Save &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY RENT -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Rent Long-Term with NISHIO?</h2>
+    <p class="section-sub">Convert CapEx to OpEx. Keep your cash flow healthy and let us handle the headaches.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128176;</div>
+        <h3>Preserve Your Capital</h3>
+        <p>No large upfront investment. Keep your cash working for core business growth, not sitting in a depreciating asset.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128736;</div>
+        <h3>Full Maintenance Covered</h3>
+        <p>All servicing, repairs, and parts included in your rental fee. No surprise costs, no downtime stress.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128260;</div>
+        <h3>Standby Replacement Unit</h3>
+        <p>Equipment breaks down? We provide a replacement unit so your operations never stop.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128200;</div>
+        <h3>Scale Up or Down</h3>
+        <p>Seasonal demand? New project? Adjust your fleet size without being locked into ownership.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128203;</div>
+        <h3>Maintenance Records</h3>
+        <p>Complete service history and compliance documentation — always audit-ready, always transparent.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127383;</div>
+        <h3>Japanese Expertise</h3>
+        <p>Backed by NISHIO Group's 60+ years of equipment rental experience and Japanese quality standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM PHOTO BANNER -->
+<div class="team-banner">
+  <img src="https://static.wixstatic.com/media/a0cfef_b2ef836d8721417db40638badad862ef~mv2.jpg/v1/fill/w_1200,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Resourceful%204.jpg" alt="NISHIO experienced mechanics team">
+  <div class="team-overlay">
+    <h3>42 Skilled Professionals Ready to Serve You</h3>
+    <p>Resourceful. Reliable. Responsive.</p>
+  </div>
+</div>
+
+<!-- EQUIPMENT -->
+<section class="section section-gray">
+  <div class="container">
+    <h2 class="section-title">Our Wide Range of Equipment for Hire</h2>
+    <p class="section-sub">New and quality equipment to tackle all your material handling needs.</p>
+    <div class="equip-grid">
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg" alt="Diesel Forklift">
+        <h4>Diesel Forklift</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg" alt="Electric Forklift - Lead Acid Battery">
+        <h4>Electric Forklift</h4>
+        <p class="equip-desc">Lead Acid Battery</p>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card featured">
+        <img src="https://static.wixstatic.com/media/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg" alt="Electric Forklift - Lithium Ion Battery">
+        <h4>Lithium Ion Forklift</h4>
+        <p class="equip-desc">Fast charge, longer life, zero maintenance</p>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_4d762d019c2046d38d36054fcc0b8f8f~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_4d762d019c2046d38d36054fcc0b8f8f~mv2.jpg" alt="LPG Forklift">
+        <h4>LPG Forklift</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_cce55e63dfeb4c7f8bd0860efe4c4e69~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_cce55e63dfeb4c7f8bd0860efe4c4e69~mv2.jpg" alt="Reach Truck">
+        <h4>Reach Truck</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_153eead99f694215bcb548610a904b3a~mv2.jpg" alt="Pallet Truck">
+        <h4>Pallet Truck</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg" alt="Sweeper">
+        <h4>Sweeper</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+      <div class="equip-card">
+        <img src="https://static.wixstatic.com/media/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg/v1/fill/w_403,h_403,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/a0cfef_83a91af174264ddf9a673beac90ba72b~mv2.jpg" alt="Scrubber">
+        <h4>Scrubber</h4>
+        <a class="equip-cta" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enquire to Hire</a>
+      </div>
+    </div>
+    <div class="fuel-compare-link">
+      <a href="https://www.nishio.com.my/forklift-fuel-comparison" target="_parent">&#9889; Compare Electric vs Diesel vs LPG — Fuel Comparison Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Get Started in 3 Simple Steps</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Tell Us Your Needs</h4>
+        <p>Share your equipment requirements, duration, and location. We'll recommend the best solution.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Get a Custom Quote</h4>
+        <p>Receive a tailored rental proposal within 24 hours, with transparent pricing and terms.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>We Deliver & Support</h4>
+        <p>Equipment delivered to your site. Full maintenance support throughout your rental period.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="section section-gray">
+  <div class="container">
+    <h2 class="section-title">We Cover Key Regions in Malaysia</h2>
+    <p class="section-sub">Serving major industrial areas with dedicated support teams.</p>
+    <div class="coverage-list">
+      <span class="coverage-tag">Selangor</span>
+      <span class="coverage-tag">Kuala Lumpur</span>
+      <span class="coverage-tag">Negeri Sembilan</span>
+      <span class="coverage-tag">Malacca</span>
+      <span class="coverage-tag">Johor</span>
+      <span class="coverage-tag">Penang</span>
+      <span class="coverage-tag">Perak (Ipoh)</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (NEW) -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub">Everything you need to know about renting with NISHIO.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What types of equipment can I rent from NISHIO?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">We offer a comprehensive range including diesel forklifts, electric forklifts (lead acid & lithium ion), LPG forklifts, reach trucks, pallet trucks, sweepers, and scrubbers. Capacities range from 1.5 ton to 25 ton, suitable for warehouses, factories, ports, and construction sites.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What is the minimum rental period?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">Our standard minimum rental period is 3 months. For longer commitments (6 months, 1 year, or more), we offer more competitive monthly rates. The longer you rent, the more cost-effective it becomes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is maintenance really included in the rental price?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">Yes — all scheduled servicing, repairs, and replacement parts are fully covered in your rental fee. Our team of 42 skilled technicians handles everything so you can focus on running your business. No hidden costs or surprise invoices.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What happens if my rented forklift breaks down?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">We provide a standby replacement unit to minimise downtime. Our service team responds quickly, and if a repair takes time, a backup forklift is deployed to keep your operations running smoothly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How quickly can I get a forklift delivered?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">Once your rental agreement is confirmed, delivery is typically within 3–5 working days depending on your location and equipment availability. For urgent requirements, please contact us directly via WhatsApp for the fastest response.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I adjust my fleet size during the rental period?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">Absolutely. We offer flexible rental arrangements that allow you to scale up or down based on your changing business needs. Whether you need additional units for a busy season or want to reduce your fleet, we'll work with you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Which areas in Malaysia do you serve?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">We serve Selangor, Kuala Lumpur, Negeri Sembilan, Malacca, Johor, Penang, and Perak (Ipoh area). Our head office is in Shah Alam with support teams across Peninsular Malaysia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to Simplify Your Operations?</h2>
+  <p>Get a free, no-obligation quote for long-term forklift rental. Our team responds within 24 hours.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/60123149699?text=Hi%20NISHIO%2C%20I'm%20interested%20in%20long-term%20forklift%20rental." target="_parent" class="btn-primary">
+      &#128172; WhatsApp Us
+    </a>
+    <a class="btn-secondary" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
+      &#9993; Request a Quote
+    </a>
+    <a href="tel:+60356331770" target="_parent" class="btn-outline">
+      &#128222; Call Us
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="form-section" id="contact-form">
+  <div class="form-card">
+    <h2>Request a Free Quote</h2>
+    <form id="enquiryForm" onsubmit="return submitToWhatsApp(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" id="f_name" required placeholder="e.g. Ahmad bin Ismail">
+        </div>
+        <div class="form-group">
+          <label>Company Name *</label>
+          <input type="text" id="f_company" required placeholder="e.g. ABC Manufacturing Sdn Bhd">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone / WhatsApp *</label>
+          <input type="tel" id="f_phone" required placeholder="e.g. 012-345 6789">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="f_email" placeholder="e.g. ahmad@abc.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Equipment Needed</label>
+          <select id="f_equipment">
+            <option value="">Select equipment type</option>
+            <option value="Diesel Forklift">Diesel Forklift</option>
+            <option value="Electric Forklift (Lead Acid)">Electric Forklift (Lead Acid)</option>
+            <option value="Electric Forklift (Lithium Ion)">Electric Forklift (Lithium Ion)</option>
+            <option value="LPG Forklift">LPG Forklift</option>
+            <option value="Reach Truck">Reach Truck</option>
+            <option value="Pallet Truck">Pallet Truck</option>
+            <option value="Sweeper">Sweeper</option>
+            <option value="Scrubber">Scrubber</option>
+            <option value="Multiple Equipment">Multiple Equipment</option>
+            <option value="Not Sure">Not Sure — Need Advice</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Estimated Rental Duration</label>
+          <select id="f_duration">
+            <option value="">Select duration</option>
+            <option value="3-6 Months">3 – 6 Months</option>
+            <option value="6-12 Months">6 – 12 Months</option>
+            <option value="1-2 Years">1 – 2 Years</option>
+            <option value="2+ Years">2+ Years</option>
+            <option value="Not Sure Yet">Not Sure Yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Location / State *</label>
+          <select id="f_location" required>
+            <option value="">Select your state</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Kuala Lumpur">Kuala Lumpur</option>
+            <option value="Negeri Sembilan">Negeri Sembilan</option>
+            <option value="Malacca">Malacca</option>
+            <option value="Johor">Johor</option>
+            <option value="Penang">Penang</option>
+            <option value="Perak (Ipoh)">Perak (Ipoh area)</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>How Did You Find Us?</label>
+          <select id="f_source">
+            <option value="">Select</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Google Ads">Google Ads</option>
+            <option value="Facebook">Facebook</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Referral">Referral / Word of Mouth</option>
+            <option value="Existing Customer">Existing NISHIO Customer</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Additional Details</label>
+        <textarea id="f_details" placeholder="e.g. Need 3 units of 2.5 ton diesel forklift for warehouse operations..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Submit Enquiry via WhatsApp &#8594;</button>
+      <p class="form-note">Opens WhatsApp with your enquiry details pre-filled. We'll respond within 24 hours.</p>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <h3>&#9989; Enquiry Sent!</h3>
+      <p>Thank you. Our team will respond within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 NISHIO Rent All (M) Sdn Bhd. All rights reserved.</p>
+  <p style="margin-top:6px;"><a href="https://www.nishio.com.my" target="_parent">www.nishio.com.my</a> &nbsp;|&nbsp; Tel: +60 3 5633 1770 &nbsp;|&nbsp; WhatsApp: +60 12 314 9699</p>
+</footer>
+
+<script>
+/* FAQ Accordion */
+function toggleFaq(el) {
+  var item = el.parentElement;
+  var wasActive = item.classList.contains('active');
+  /* close all */
+  var items = document.querySelectorAll('.faq-item');
+  for (var i = 0; i < items.length; i++) {
+    items[i].classList.remove('active');
+  }
+  /* open clicked if was closed */
+  if (!wasActive) {
+    item.classList.add('active');
+  }
+}
+
+/* WhatsApp Form Submission */
+function submitToWhatsApp(e) {
+  e.preventDefault();
+  var name = document.getElementById('f_name').value;
+  var company = document.getElementById('f_company').value;
+  var phone = document.getElementById('f_phone').value;
+  var email = document.getElementById('f_email').value;
+  var equipment = document.getElementById('f_equipment').value;
+  var duration = document.getElementById('f_duration').value;
+  var location = document.getElementById('f_location').value;
+  var source = document.getElementById('f_source').value;
+  var details = document.getElementById('f_details').value;
+
+  var msg = "Hi NISHIO, I'm interested in long-term forklift rental.\n\n";
+  msg += "Name: " + name + "\n";
+  msg += "Company: " + company + "\n";
+  msg += "Phone: " + phone + "\n";
+  if (email) msg += "Email: " + email + "\n";
+  if (equipment) msg += "Equipment: " + equipment + "\n";
+  if (duration) msg += "Duration: " + duration + "\n";
+  msg += "Location: " + location + "\n";
+  if (source) msg += "Found Us Via: " + source + "\n";
+  if (details) msg += "Details: " + details + "\n";
+
+  var url = "https://wa.me/60123149699?text=" + encodeURIComponent(msg);
+  window.open(url, '_parent');
+  return false;
+}
+</script>
+
+</body>
+</html>
